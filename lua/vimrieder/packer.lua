@@ -57,4 +57,11 @@ return require('packer').startup(function(use)
   },
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- recommanded if need floating window support
+  use {
+      'stevearc/aerial.nvim',
+      config = function() require('aerial').setup() end
+    }
+
 end)

@@ -21,7 +21,7 @@ end)
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- next greatest remap ever : asbjornHaland
+-- next greatest remap ever : asbjornHalanod
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
@@ -44,3 +44,18 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 --vim.keymap.set("n", "<C-n>", ':NvimTreeToggle<CR>')
 vim.keymap.set("n", "<leader>n", ':NvimTreeToggle<CR>')
+
+
+vim.keymap.set("n", "<leader>g", ':GoRun<CR>')
+
+vim.keymap.set("n", "<leader>g", ':GoRun<CR>')
+vim.keymap.set("n", "<leader>t", ':GoTest<CR>')
+
+vim.keymap.set("n", "<leader>q", ':copen<CR>')
+vim.keymap.set("n", "<leader>c", ':cclose<CR>')
+
+
+-- You probably also want to set a keymap to toggle aerial
+-- vim.keymap.set('n', '<leader>l', '<cmd>AerialToggle!<CR>')
+vim.keymap.set('n', '<leader>l', '<cmd>GoPkgOutline<CR>')
+
