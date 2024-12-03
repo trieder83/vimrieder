@@ -135,6 +135,11 @@ _G.packer_plugins = {
     path = "/home/trieder/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["iron.nvim"] = {
+    loaded = true,
+    path = "/home/trieder/.local/share/nvim/site/pack/packer/start/iron.nvim",
+    url = "https://github.com/hkupty/iron.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/trieder/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -195,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/trieder/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/trieder/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

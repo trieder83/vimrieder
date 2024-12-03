@@ -59,3 +59,6 @@ vim.keymap.set("n", "<leader>c", ':cclose<CR>')
 -- vim.keymap.set('n', '<leader>l', '<cmd>AerialToggle!<CR>')
 vim.keymap.set('n', '<leader>l', '<cmd>GoPkgOutline<CR>')
 
+vim.keymap.set("n", "<leader>m", ':SymbolsOutline<CR>')
+
+vim.keymap.set('n', '<F5>', ":w <bar> exec '!python3 '.shellescape('%')<CR>")

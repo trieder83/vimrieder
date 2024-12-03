@@ -35,3 +35,5 @@ vim.g.netrw_winsize = 25
 
 -- vim.opt.guifont = { "DejaVu Sans Mono", "h12" }
 vim.opt.guifont = { "Go Mono Nerd Font Complete Mono", "h12" }
+
+require("symbols-outline").setup()
