@@ -65,6 +65,13 @@ return require('packer').startup(function(use)
       'stevearc/aerial.nvim',
       config = function() require('aerial').setup() end
     }
-
   use 'hkupty/iron.nvim'
+  use {
+	"olimorris/codecompanion.nvim",
+	requires = {
+		"nvim-lua/plenary.nvim",
+		"nvim-treesitter/nvim-treesitter",
+	}
+  }
 end)
+

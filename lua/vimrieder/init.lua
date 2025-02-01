@@ -37,3 +37,47 @@ vim.g.netrw_winsize = 25
 vim.opt.guifont = { "Go Mono Nerd Font Complete Mono", "h12" }
 
 require("symbols-outline").setup()
+
+-- setup codecomaption with anthropic
+--[[
+require("codecompanion").setup({
+  strategies = {
+    chat = {
+      --adapter = "anthropic",
+      adapter = "ollama",
+    },
+    inline = {
+      -- adapter = "anthropic",
+      adapter = "ollama",
+    }
+  },
+  ollama = function()
+    return require("codecompanion.adapters").extend("ollama", {
+        env = {
+          url  = "http://localhost:31480",
+   	   }
+ })
+ end,
+})
+]]--
+
+require("codecompanion").setup({
+  adapters = {
+    ollama = function()
+      return require("codecompanion.adapters").extend("ollama", {
+        env = {
+          url = "http://localhost:31480",
+          --api_key = "",
+        },
+        --[[ headers = {
+          ["Content-Type"] = "application/json",
+          ["Authorization"] = "Bearer ${api_key}",
+        },
+        ]]--
+        parameters = {
+          sync = true,
+        },
+      })
+    end,
+  },
+})

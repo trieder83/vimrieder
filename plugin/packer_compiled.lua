@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/trieder/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codecompanion.nvim"] = {
+    loaded = true,
+    path = "/home/trieder/.local/share/nvim/site/pack/packer/start/codecompanion.nvim",
+    url = "https://github.com/olimorris/codecompanion.nvim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/home/trieder/.local/share/nvim/site/pack/packer/start/copilot.vim",
