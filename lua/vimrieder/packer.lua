@@ -73,5 +73,14 @@ return require('packer').startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 	}
   }
+  use {
+    'greggh/claude-code.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim', -- Required for git operations
+    },
+    config = function()
+      require('claude-code').setup()
+    end
+  }
 end)
 
